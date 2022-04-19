@@ -3,13 +3,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import './sidebar.css'
 import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
 import {BiSearch} from "react-icons/bi";
-import { useNavigate } from 'react-router-dom';
-// import { useState } from "react";
-import { NavLink } from "react-router-dom";
  
 export default function Sidebar(){
-    
-    const navigate = useNavigate();
 
     const [open, setOpen]=useState(false)
     const toggle=()=>setOpen(!open);
